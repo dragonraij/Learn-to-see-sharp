@@ -17,7 +17,11 @@ namespace CompareHashSets
             bigCities.Add("SHEFFIELD");
             bigCities.Add("BEIJENG");
 
-            foreach (string city in bigCities)
+            string[] citiesInUk = { "Sheffield", "Ripon", "truoro", "manchester"};
+
+            var newCities = bigCities.IntersectWith(citiesInUk);
+
+            foreach (string city in newCities)
             {
                 Console.WriteLine(city);
             }
