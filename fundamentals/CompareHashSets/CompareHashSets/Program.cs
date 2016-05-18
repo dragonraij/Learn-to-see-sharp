@@ -10,8 +10,7 @@ namespace CompareHashSets
         static void Main(string[] args)
         {
 
-            var bigCities = new HashSet<string>
-                (StringComparer.InvariantCultureIgnoreCase)
+            var bigCities = new string[]
             { "new york", "Manchester", "sheffield", "Paris"};
 
             bigCities.Add("SHEFFIELD");
