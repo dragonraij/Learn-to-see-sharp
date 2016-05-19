@@ -6,7 +6,9 @@
   })
     .done(function( data ) {
       $.each( data.data.results, function( i, item ) {
-        $( "<img>" ).attr( "src", item.thumbnail.path+".jpg" ).appendTo( "#char_images" );
+        $( "<img>" ).attr( "src", item.thumbnail.path+".jpg" ).appendTo( "#char_image" );
+          $( "#char_name" ).append( item.name);
+          $( "#char_bio" ).append( "<p>"+item.description+"</p>" );
         if ( i === 0 ) {
           return false;
         }
