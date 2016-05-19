@@ -1,7 +1,7 @@
 .jumbotron {
   margin-bottom: 0px;
 margin-top: 90px;
-  height: 350px;
+  
   color: white;
   text-shadow: black 0.3em 0.3em 0.3em;
   background: url('images/header.jpg') no-repeat center center;
@@ -13,3 +13,8 @@ margin-top: 90px;
     clear: both;
     margin:0 auto;
 }
+
+img{
+    width: 100%;
+}
+

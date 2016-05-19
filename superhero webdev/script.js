@@ -5,9 +5,9 @@
 
   })
     .done(function( data ) {
-      $.each( data.items, function( i, item ) {
-        $( "<img>" ).attr( "src", item.media.m ).appendTo( "#images" );
-        if ( i === 3 ) {
+      $.each( data.data.results, function( i, item ) {
+        $( "<img>" ).attr( "src", item.thumbnail.path+".jpg" ).appendTo( "#char_images" );
+        if ( i === 0 ) {
           return false;
         }
       });
