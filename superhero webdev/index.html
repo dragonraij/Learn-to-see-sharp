@@ -11,14 +11,21 @@
         <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
       <a class="navbar-brand" href="#">Superheropedia</a>
     </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
     <ul class="nav navbar-nav">
       <li class="active"><a href="#">Home</a></li>
       <li><a href="#">Comics</a></li>
       <li><a href="#">Storylines</a></li> 
       <li><a href="#">Characters</a></li> 
     </ul>
+          </div>
   </div>
 </nav>
         
@@ -48,17 +55,18 @@
         </div>
   <div class="col-sm-6">
         <div class="panel panel-info">
-  <div class="panel-heading">Panel heading</div>
+  <div class="panel-heading" id="comic_name"></div>
   <div class="panel-body">
-    Panel content
+    <div id="comic_image"></div>
       <div id="images"></div>
   </div>
   <div class="panel-footer">
+    <div id="comic_description"></div>
     <a href="javascript:void(0)" class="btn btn-info">Explore</a>          
   </div>
       </div>
 </div>
-<a href="javascript:void(0)" class="btn btn-default btn-lg btn-block btn-raised">REFRESH</a>
+<a href="javascript:location.reload();" class="btn btn-default btn-lg btn-block btn-raised">REFRESH</a>
 
 </div>
 
